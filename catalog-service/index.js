@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 // Conexão com o banco
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgres://postgres:123@postgres:5432/catalogdb'
+  connectionString: process.env.DATABASE_URL || 'postgres://postgres:postgres@postgres:5432/catalogdb'
 });
 
 

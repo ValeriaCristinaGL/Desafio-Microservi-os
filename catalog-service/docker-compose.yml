@@ -19,19 +19,17 @@ services:
     container_name: catalog-service
     restart: always
     environment:
-      DATABASE_URL: "postgres://postgres:postgres@postgres:5432/catalogdb"
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/catalogdb
     ports:
       - "5000:5000"
     depends_on:
       - postgres
 
-
-
 # Para apagar todo o banco existente do container. Faça isso apenas em ambiente de desenvolvimento ou protótipo.
 # docker volume ls
 
-#docker stop catalog-postgres
-#docker rm catalog-postgres
+# docker stop catalog-postgres
+# docker rm catalog-postgres
 
 # docker volume rm catalog-postgres-data
 
