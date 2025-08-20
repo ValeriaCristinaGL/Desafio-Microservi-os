@@ -1,0 +1,19 @@
+# Ignora a pasta de dependências do Node.js
+node_modules
+
+# Ignora arquivos de log do npm
+npm-debug.log
+
+# Não inclui o próprio Dockerfile e .dockerignore na imagem
+Dockerfile
+.dockerignore
+
+# Ignora arquivos de variáveis de ambiente
+.env
+
+# Ignora arquivos e pastas do Git
+.git
+.gitignore
+
+# Ignora arquivos Markdown (documentação)
+*.md
